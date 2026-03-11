@@ -66,7 +66,7 @@ ol {
 .content {
   display: flex;
   align-items: flex-end;
-  min-width: 1140;
+  min-width: 1140px;
   column-gap: 30px;
 }
 
@@ -74,7 +74,7 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .result__video {
@@ -115,12 +115,12 @@ ol {
   border: 1px solid currentColor;
   border-left: none;
   border-right: none;
-  padding: 2.5px 12px 2.5px 0;
+  padding: 2px 12px 2px 0;
+  margin-bottom: 3px;
   min-width: 225px;
-  min-height: 27px;
   font-family: inherit;
   font-size: inherit;
-  background-color: #1B1919;
+  background-color: transparent;
   color: currentColor;
 }
 
@@ -138,7 +138,7 @@ ol {
 }
 
 .search-form__label:not(.search-form__textfield) {
-  cursor: url(/cursor/pointer.svg), pointer;
+  cursor: url(../cursor/pointer.svg), pointer;
 }
 
 .search-form__checkbox-list {
@@ -168,7 +168,8 @@ ol {
 
 .button {
   border: 1px solid #fff;
-  cursor: url(/cursor/pointer.svg), pointer;
+  cursor: url(../cursor/pointer.svg), pointer;
+  padding: 5px 0 5px 0;
   font-family: inherit;
   font-size: inherit;
   font-weight: 700;
@@ -178,12 +179,8 @@ ol {
 
 .search-form__submit-button {
   align-self: flex-end;
-  padding: 6px 0 6px 0;
   min-width: 194px;
-}
-
-.more-button {
-  padding: 6px 0 6px 0;
+  margin-bottom: 4px;
 }
 
 .button:hover {
@@ -208,12 +205,12 @@ ol {
 .content__details {
   width: 100%;
   height: 100%;
+  padding-bottom: 3px;
 }
 
 .title {
   padding-bottom: 24px;
-  padding-top: 20px;
-  line-height: 0.94;
+  line-height: .94;
   text-transform: uppercase;
   font-family: Oswald, sans-serif;
   font-weight: 700;
@@ -221,7 +218,7 @@ ol {
 }
 
 .content__accent {
-  line-height: 0.94;
+  line-height: .94;
   color: #545050;
 }
 
@@ -241,7 +238,8 @@ ol {
 }
 
 .content__list-item {
-  padding-right: 3px;
+  max-width: 390px;
+  padding-right: 2px;
   padding-left: 3px;
 }
 
@@ -255,7 +253,7 @@ ol {
 .content__video-card-title {
   overflow: hidden;
   max-width: 196px;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 100%;
@@ -273,9 +271,10 @@ ol {
 .content__video-card-description {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   overflow: hidden;
+  text-overflow: ellipsis;
   line-height: 16.2px;
 }
 
@@ -290,7 +289,7 @@ ol {
 
 .content__card-link {
   display: block;
-  cursor: url(/cursor/pointer.svg), pointer;
+  cursor: url(../cursor/pointer.svg), pointer;
   text-decoration: none;
   color: #fff;
 }
